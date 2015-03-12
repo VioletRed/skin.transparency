@@ -236,7 +236,7 @@
 					<animation effect="slide" start="0,0" end="728,0" time="200" condition="Control.HasFocus(9)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="910,0" time="200" condition="Control.HasFocus(10)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="1092,0" time="200" condition="Control.HasFocus(12)">Conditional</animation>
-					<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+					<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 					<visible>Control.HasFocus(6) | Control.HasFocus(7) | Control.HasFocus(8) | Control.HasFocus(9) | Control.HasFocus(10) | Control.HasFocus(11) | Control.HasFocus(12)</visible>
 				</control>
 			</control>

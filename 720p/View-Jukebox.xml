@@ -19,7 +19,7 @@
 				<texture>jukebox-background.jpg</texture>
 				<animation effect="fade" start="0" end="80" time="1000" reversible="true">Visible</animation>
 				<animation effect="fade" start="80" end="0" time="500" reversible="true">Hidden</animation>
-				<animation effect="rotate" end="-3600" center="auto" time="1000000" loop="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="rotate" end="-3600" center="auto" time="1000000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 				<visible>Player.Playing</visible>
 			</control>
 			<control type="image">
@@ -106,7 +106,7 @@
 				<width>12</width>
 				<height>196</height>
 				<texture>jukebox-water-left.png</texture>
-				<animation effect="slide" start="0,0" end="0,196" time="5000" loop="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,196" time="5000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>320</posx>
@@ -114,7 +114,7 @@
 				<width>12</width>
 				<height>196</height>
 				<texture>jukebox-water-left.png</texture>
-				<animation effect="slide" start="0,0" end="0,196" time="5000" loop="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,196" time="5000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>950</posx>
@@ -122,7 +122,7 @@
 				<width>14</width>
 				<height>191</height>
 				<texture>jukebox-water-right.png</texture>
-				<animation effect="slide" start="0,0" end="0,-191" time="5000" loop="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,-191" time="5000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>950</posx>
@@ -130,7 +130,7 @@
 				<width>14</width>
 				<height>191</height>
 				<texture>jukebox-water-right.png</texture>
-				<animation effect="slide" start="0,0" end="0,-191" time="5000" loop="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,-191" time="5000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>312</posx>
@@ -146,7 +146,7 @@
 				<height>656</height>
 				<texture>jukebox-ring.png</texture>
 				<aspectratio>keep</aspectratio>
-				<animation effect="rotate" end="3600" center="auto" time="500000" loop="true" reversible="false" condition="Player.Playing">Conditional</animation>
+				<animation effect="rotate" end="3600" center="auto" time="500000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>400</posx>
@@ -254,7 +254,7 @@
 					<width>205</width>
 					<height>150</height>
 					<texture>jukebox-light-top.png</texture>
-					<animation effect="fade" start="0" end="100" time="1400" pulse="true" tween="bounce" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="1400" pulse="true" tween="bounce" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				</control>
 				<control type="image">
@@ -263,7 +263,7 @@
 					<width>802</width>
 					<height>430</height>
 					<texture>jukebox-light-upper.png</texture>
-					<animation effect="fade" start="0" end="70" time="600" delay="600" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="0" end="70" time="600" delay="600" pulse="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				</control>
 				<control type="image">
@@ -272,7 +272,7 @@
 					<width>620</width>
 					<height>321</height>
 					<texture>jukebox-light-inner.png</texture>
-					<animation effect="fade" start="0" end="60" time="800" delay="1200" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="0" end="60" time="800" delay="1200" pulse="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				</control>
 				<control type="image">
@@ -281,7 +281,7 @@
 					<width>24</width>
 					<height>24</height>
 					<texture>jukebox-light.png</texture>
-					<animation effect="slide" start="0," end="-80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="slide" start="0," end="-80,0" time="2000" pulse="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				</control>
 				<control type="image">
@@ -290,7 +290,7 @@
 					<width>24</width>
 					<height>24</height>
 					<texture>jukebox-light.png</texture>
-					<animation effect="slide" start="0," end="-80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="slide" start="0," end="-80,0" time="2000" pulse="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				</control>
 				<control type="image">
@@ -299,7 +299,7 @@
 					<width>24</width>
 					<height>24</height>
 					<texture>jukebox-light.png</texture>
-					<animation effect="slide" start="0," end="80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="slide" start="0," end="80,0" time="2000" pulse="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				</control>
 				<control type="image">
@@ -308,7 +308,7 @@
 					<width>24</width>
 					<height>24</height>
 					<texture>jukebox-light.png</texture>
-					<animation effect="slide" start="0," end="80,0" time="2000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="slide" start="0," end="80,0" time="2000" pulse="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				</control>
 				<control type="image">
@@ -317,7 +317,7 @@
 					<width>63</width>
 					<height>203</height>
 					<texture>jukebox-light-bottomleft2.png</texture>
-					<animation effect="fade" start="0" end="100" time="1100" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="1100" pulse="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				</control>
 				<control type="image">
@@ -326,7 +326,7 @@
 					<width>33</width>
 					<height>196</height>
 					<texture>jukebox-light-bottomleft1.png</texture>
-					<animation effect="fade" start="0" end="100" time="1300" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="1300" pulse="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				</control>
 				<control type="image">
@@ -335,7 +335,7 @@
 					<width>35</width>
 					<height>193</height>
 					<texture>jukebox-light-bottomright1.png</texture>
-					<animation effect="fade" start="0" end="100" time="1800" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="1800" pulse="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				</control>
 				<control type="image">
@@ -344,7 +344,7 @@
 					<width>59</width>
 					<height>197</height>
 					<texture>jukebox-light-bottomright2.png</texture>
-					<animation effect="fade" start="0" end="100" time="1000" pulse="true" reversible="false" condition="Player.Playing">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="1000" pulse="true" reversible="false" condition="!System.ScreenSaverActive+Player.Playing">Conditional</animation>
 					<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
 				</control>
 			</control>

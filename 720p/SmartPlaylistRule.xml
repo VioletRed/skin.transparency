@@ -133,7 +133,7 @@
 				<texture>button-focus.png</texture>
 				<animation effect="slide" start="0,0" end="200,0" time="100" condition="Control.HasFocus(20)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="400,0" time="100" condition="Control.HasFocus(19)">Conditional</animation>
-				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 				<visible>Control.HasFocus(20) | Control.HasFocus(18) | Control.HasFocus(19)</visible>
 			</control>
 		</control>

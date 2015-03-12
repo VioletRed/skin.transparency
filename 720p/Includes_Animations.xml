@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="backgroundanimation">
-		<animation effect="zoom" start="110" end="130" center="auto" time="18000" pulse="true" condition="![Skin.HasSetting(Home_Movies_Fanart_Background) + Container(5040).HasFocus(2)] + ![Skin.HasSetting(Home_TVShows_Fanart_Background) + Container(5040).HasFocus(3)] + ![Skin.HasSetting(Home_Music_Fanart_Background) + Container(5040).HasFocus(6)]" reversible="false">Conditional</animation>
-		<animation effect="slide" start="-20,-20" end="40,40" time="14000" tween="cubic" easing="inout" pulse="true" condition="![Skin.HasSetting(Home_Movies_Fanart_Background) + Container(5040).HasFocus(2)] + ![Skin.HasSetting(Home_TVShows_Fanart_Background) + Container(5040).HasFocus(3)] + ![Skin.HasSetting(Home_Music_Fanart_Background) + Container(5040).HasFocus(6)]" reversible="false">Conditional</animation>
+		<animation effect="zoom" start="110" end="130" center="auto" time="18000" pulse="true" condition="!System.ScreenSaverActive+![Skin.HasSetting(Home_Movies_Fanart_Background) + Container(5040).HasFocus(2)] + ![Skin.HasSetting(Home_TVShows_Fanart_Background) + Container(5040).HasFocus(3)] + ![Skin.HasSetting(Home_Music_Fanart_Background) + Container(5040).HasFocus(6)]" reversible="false">Conditional</animation>
+		<animation effect="slide" start="-20,-20" end="40,40" time="14000" tween="cubic" easing="inout" pulse="true" condition="!System.ScreenSaverActive+![Skin.HasSetting(Home_Movies_Fanart_Background) + Container(5040).HasFocus(2)] + ![Skin.HasSetting(Home_TVShows_Fanart_Background) + Container(5040).HasFocus(3)] + ![Skin.HasSetting(Home_Music_Fanart_Background) + Container(5040).HasFocus(6)]" reversible="false">Conditional</animation>
 	</include>
 	<include name="backgroundanimation2">
-		<animation effect="zoom" start="110" end="130" center="auto" time="6000" pulse="true" condition="true">Conditional</animation>
-		<animation effect="slide" start="-20,-20" end="40,40" time="7000" pulse="true" condition="true">Conditional</animation>
+		<animation effect="zoom" start="110" end="130" center="auto" time="6000" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
+		<animation effect="slide" start="-20,-20" end="40,40" time="7000" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ButtonScroll">
 		<control type="image">
@@ -17,7 +17,7 @@
 			<texture border="7">button-focus.png</texture>
 			<animation effect="slide" start="0,0" end="170,0" time="100" condition="Control.HasFocus(304)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="340,0" time="100" condition="Control.HasFocus(305)">Conditional</animation>
-			<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+			<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 			<visible>Control.HasFocus(303) | Control.HasFocus(304) | Control.HasFocus(305)</visible>
 		</control>
 	</include>
@@ -32,7 +32,7 @@
 			<animation effect="slide" start="0,0" end="-170,-40" time="100" condition="Control.HasFocus(305)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-40" time="100" condition="Control.HasFocus(306)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-170,0" time="100" condition="Control.HasFocus(307)">Conditional</animation>
-			<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+			<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 			<visible>Control.HasFocus(303) | Control.HasFocus(304) | Control.HasFocus(305) | Control.HasFocus(306) | Control.HasFocus(307)</visible>
 		</control>
 	</include>
@@ -47,18 +47,18 @@
 			<effect type="rotate" center="auto" start="0" end="25" time="500" delay="500"/>
 			<effect type="rotate" center="auto" start="0" end="30" time="500" delay="1000"/>
 		</animation>
-		<animation effect="rotate" end="-36000" center="auto" time="500000" loop="true" reversible="false" condition="true">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="3000" loop="true" reversible="false" condition="Player.Forwarding2x">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="Player.Forwarding4x">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="1500" loop="true" reversible="false" condition="Player.Forwarding8x">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="1000" loop="true" reversible="false" condition="Player.Forwarding16x">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="500" loop="true" reversible="false" condition="Player.Forwarding32x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="3000" loop="true" reversible="false" condition="Player.Rewinding2x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="2000" loop="true" reversible="false" condition="Player.Rewinding4x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="1500" loop="true" reversible="false" condition="Player.Rewinding8x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="1000" loop="true" reversible="false" condition="Player.Rewinding16x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="500" loop="true" reversible="false" condition="Player.Rewinding32x">Conditional</animation>
-		<animation effect="rotate" end="36000" center="auto" time="500000" loop="true" reversible="false" condition="Player.Paused">Conditional</animation>
+		<animation effect="rotate" end="-36000" center="auto" time="500000" loop="true" reversible="false" condition="!System.ScreenSaverActive">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="3000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding2x">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding4x">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="1500" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding8x">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="1000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding16x">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="500" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding32x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="3000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding2x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="2000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding4x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="1500" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding8x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="1000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding16x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="500" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding32x">Conditional</animation>
+		<animation effect="rotate" end="36000" center="auto" time="500000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Paused">Conditional</animation>
 		<animation effect="rotate" end="-28" center="auto" time="500" reversible="false" condition="Player.Paused">Conditional</animation>
 		<animation effect="rotate" end="-15" center="auto" time="500" delay="500" reversible="false" condition="Player.Paused">Conditional</animation>
 		<animation effect="rotate" end="-3" center="auto" time="250" delay="1000" reversible="false" condition="Player.Paused">Conditional</animation>
@@ -68,18 +68,18 @@
 			<effect type="slide" end="64" tween="cubic" easing="out" delay="500" time="1500"/>
 			<effect type="rotate" center="auto" end="162" time="2250"/>
 		</animation>
-		<animation effect="rotate" end="-36000" center="auto" time="500000" loop="true" reversible="false" condition="true">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="3000" loop="true" reversible="false" condition="Player.Forwarding2x">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="Player.Forwarding4x">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="1500" loop="true" reversible="false" condition="Player.Forwarding8x">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="1000" loop="true" reversible="false" condition="Player.Forwarding16x">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="500" loop="true" reversible="false" condition="Player.Forwarding32x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="3000" loop="true" reversible="false" condition="Player.Rewinding2x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="2000" loop="true" reversible="false" condition="Player.Rewinding4x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="1500" loop="true" reversible="false" condition="Player.Rewinding8x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="1000" loop="true" reversible="false" condition="Player.Rewinding16x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="500" loop="true" reversible="false" condition="Player.Rewinding32x">Conditional</animation>
-		<animation effect="rotate" end="36000" center="auto" time="500000" loop="true" reversible="false" condition="Player.Paused">Conditional</animation>
+		<animation effect="rotate" end="-36000" center="auto" time="500000" loop="true" reversible="false" condition="!System.ScreenSaverActive">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="3000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding2x">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding4x">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="1500" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding8x">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="1000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding16x">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="500" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding32x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="3000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding2x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="2000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding4x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="1500" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding8x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="1000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding16x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="500" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding32x">Conditional</animation>
+		<animation effect="rotate" end="36000" center="auto" time="500000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Paused">Conditional</animation>
 		<animation effect="rotate" end="-28" center="auto" time="500" reversible="false" condition="Player.Paused">Conditional</animation>
 		<animation effect="rotate" end="-15" center="auto" time="500" delay="500" reversible="false" condition="Player.Paused">Conditional</animation>
 		<animation effect="rotate" end="-3" center="auto" time="250" delay="1000" reversible="false" condition="Player.Paused">Conditional</animation>
@@ -93,18 +93,18 @@
 			<effect type="slide" end="0,-100" tween="cubic" easing="out" time="2000"/>
 			<effect type="rotate" center="auto" end="162" time="2250"/>
 		</animation>
-		<animation effect="rotate" end="-36000" center="auto" time="500000" loop="true" reversible="false" condition="true">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="3000" loop="true" reversible="false" condition="Player.Forwarding2x">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="Player.Forwarding4x">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="1500" loop="true" reversible="false" condition="Player.Forwarding8x">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="1000" loop="true" reversible="false" condition="Player.Forwarding16x">Conditional</animation>
-		<animation effect="rotate" end="-360" center="auto" time="500" loop="true" reversible="false" condition="Player.Forwarding32x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="3000" loop="true" reversible="false" condition="Player.Rewinding2x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="2000" loop="true" reversible="false" condition="Player.Rewinding4x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="1500" loop="true" reversible="false" condition="Player.Rewinding8x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="1000" loop="true" reversible="false" condition="Player.Rewinding16x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="500" loop="true" reversible="false" condition="Player.Rewinding32x">Conditional</animation>
-		<animation effect="rotate" end="36000" center="auto" time="500000" loop="true" reversible="false" condition="Player.Paused">Conditional</animation>
+		<animation effect="rotate" end="-36000" center="auto" time="500000" loop="true" reversible="false" condition="!System.ScreenSaverActive">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="3000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding2x">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding4x">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="1500" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding8x">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="1000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding16x">Conditional</animation>
+		<animation effect="rotate" end="-360" center="auto" time="500" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Forwarding32x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="3000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding2x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="2000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding4x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="1500" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding8x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="1000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding16x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="500" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Rewinding32x">Conditional</animation>
+		<animation effect="rotate" end="36000" center="auto" time="500000" loop="true" reversible="false" condition="!System.ScreenSaverActive+Player.Paused">Conditional</animation>
 		<animation effect="rotate" end="-28" center="auto" time="500" reversible="false" condition="Player.Paused">Conditional</animation>
 		<animation effect="rotate" end="-15" center="auto" time="500" delay="500" reversible="false" condition="Player.Paused">Conditional</animation>
 		<animation effect="rotate" end="-3" center="auto" time="250" delay="1000" reversible="false" condition="Player.Paused">Conditional</animation>
@@ -158,112 +158,112 @@
 	<include name="ListFocusScroll">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container.OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container.OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll2">
 		<animation effect="slide" start="0,-35" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(302).OnNext">focus</animation>
 		<animation effect="slide" start="0,35" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(302).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll3">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(450).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(450).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll4">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(20).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(20).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll5">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(21).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(21).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll6">
 		<animation effect="slide" start="0,-35" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(450).OnNext">focus</animation>
 		<animation effect="slide" start="0,35" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(450).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll7">
 		<animation effect="slide" start="0,-35" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(451).OnNext">focus</animation>
 		<animation effect="slide" start="0,35" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(451).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll8">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(100).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(100).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll9">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(5).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(5).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll10">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(120).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(120).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll11">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(2).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(2).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll12">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(10).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(10).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll13">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(4).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(4).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll14">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(3).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(3).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll15">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(110).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(110).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll22">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(49).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(49).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll23">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(50).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(50).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll26">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(11).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(11).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll27">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(12).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(12).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll28">
 		<animation effect="slide" start="0,-29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(13).OnNext">focus</animation>
 		<animation effect="slide" start="0,29" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(13).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll30">
 		<animation effect="slide" start="0,-59" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(6).OnNext">focus</animation>
 		<animation effect="slide" start="0,59" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(6).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="ListFocusScroll31">
 		<animation effect="slide" start="0,-34" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(150).OnNext">focus</animation>
 		<animation effect="slide" start="0,34" end="0,0" time="100" reversible="false" tween="quadratic" easing="out" condition="Container(150).OnPrevious">focus</animation>
-		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+		<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 	</include>
 	<include name="Music-Icons-CaseAnimation1">
 		<animation type="focus" reversible="false">

@@ -222,7 +222,7 @@
 				<animation effect="slide" start="0,0" end="0,42" time="0" condition="Container.Content(TvShows) + Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="110,0" time="0" condition="Container.Content(TvShows) + !Skin.HasSetting(TVShowsPosters)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,18" time="0" condition="Container.Content(Episodes)">Conditional</animation>
-				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 				<visible>Control.HasFocus(5) | Control.HasFocus(8) | Control.HasFocus(6) | Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(1113)</visible>
 			</control>
 			<control type="group">

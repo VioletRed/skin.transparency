@@ -2405,7 +2405,7 @@
 					<posy>0</posy>
 					<height>40</height>
 					<texture border="15">Button_Home_Focus.png</texture>
-					<animation effect="fade" start="100" end="90" time="900" pulse="true" condition="Control.HasFocus(5040)">conditional</animation>
+					<animation effect="fade" start="100" end="90" time="900" pulse="true" condition="!System.ScreenSaverActive+Control.HasFocus(5040)">conditional</animation>
 					<visible>Control.HasFocus(5040)</visible>
 					<include condition="!Skin.HasSetting(WideHomeMenu)">HomeButtonNormal</include>
 					<include condition="Skin.HasSetting(WideHomeMenu)">HomeButtonWide</include>
@@ -2556,7 +2556,7 @@
 					<width>237</width>
 					<height>40</height>
 					<texture border="15">Button_Home_Focus_Hor.png</texture>
-					<animation effect="fade" start="100" end="90" time="900" pulse="true" condition="Control.HasFocus(5040)">conditional</animation>
+					<animation effect="fade" start="100" end="90" time="900" pulse="true" condition="!System.ScreenSaverActive+Control.HasFocus(5040)">conditional</animation>
 					<visible>Control.HasFocus(5040)</visible>
 				</control>
 				<control type="label">
@@ -2627,7 +2627,7 @@
 					<width>213</width>
 					<height>40</height>
 					<texture border="15">Button_Home_Focus_Hor.png</texture>
-					<animation effect="fade" start="100" end="90" time="900" pulse="true" condition="Control.HasFocus(5040)">conditional</animation>
+					<animation effect="fade" start="100" end="90" time="900" pulse="true" condition="!System.ScreenSaverActive+Control.HasFocus(5040)">conditional</animation>
 					<visible>Control.HasFocus(5040)</visible>
 				</control>
 				<control type="label">
@@ -4267,7 +4267,7 @@
 				<width>170</width>
 				<height>32</height>
 				<texture border="7">list-focus2.png</texture>
-				<animation effect="fade" start="30" end="60" time="750" pulse="true" condition="true">Conditional</animation>
+				<animation effect="fade" start="30" end="60" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 			</control>
 			<control type="label">
 				<posx>0</posx>
@@ -4335,7 +4335,7 @@
 				<width>200</width>
 				<height>20</height>
 				<texture border="7">list-focus2.png</texture>
-				<animation effect="fade" start="40" end="70" time="750" pulse="true" condition="true">Conditional</animation>
+				<animation effect="fade" start="40" end="70" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 			</control>
 			<control type="label">
 				<posx>0</posx>

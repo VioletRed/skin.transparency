@@ -6497,7 +6497,7 @@
 						<font>font-23</font>
 						<align>left</align>
 						<include>RecentFadeEffect</include>
-						<animation effect="fade" start="100" end="30" time="700" loop="true" condition="Skin.String(player1score,5)">Conditional</animation>
+						<animation effect="fade" start="100" end="30" time="700" loop="true" condition="!System.ScreenSaverActive+Skin.String(player1score,5)">Conditional</animation>
 						<visible>![IsEmpty(Skin.String(player1name)) | IsEmpty(Skin.String(player2name))]</visible>
 					</control>
 					<control type="label">
@@ -6534,7 +6534,7 @@
 						<font>font-23</font>
 						<align>left</align>
 						<include>RecentFadeEffect</include>
-						<animation effect="fade" start="100" end="30" time="700" loop="true" condition="Skin.String(player2score,5)">Conditional</animation>
+						<animation effect="fade" start="100" end="30" time="700" loop="true" condition="!System.ScreenSaverActive+Skin.String(player2score,5)">Conditional</animation>
 						<visible>![IsEmpty(Skin.String(player1name)) | IsEmpty(Skin.String(player2name))]</visible>
 					</control>
 					<control type="button" id="73">
@@ -6680,7 +6680,7 @@
 						<texture>game-cross.png</texture>
 						<colordiffuse>FF00FF00</colordiffuse>
 						<animation effect="fade" start="0" end="100" time="500">Visible</animation>
-						<animation effect="fade" start="100" end="0" time="500" pulse="true" condition="true">Conditional</animation>
+						<animation effect="fade" start="100" end="0" time="500" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 						<visible>Skin.String(playerturn,1) + ![Control.IsVisible(78) | Control.IsVisible(79) | [[Skin.HasSetting(cross1) | Skin.HasSetting(circle1)] + [Skin.HasSetting(cross2) | Skin.HasSetting(circle2)] + [Skin.HasSetting(cross3) | Skin.HasSetting(circle3)] + [Skin.HasSetting(cross4) | Skin.HasSetting(circle4)] + [Skin.HasSetting(cross5) | Skin.HasSetting(circle5)] + [Skin.HasSetting(cross6) | Skin.HasSetting(circle6)] + [Skin.HasSetting(cross7) | Skin.HasSetting(circle7)] + [Skin.HasSetting(cross8) | Skin.HasSetting(circle8)] + [Skin.HasSetting(cross9) | Skin.HasSetting(circle9)]]] + !Control.HasFocus(71) + !Control.HasFocus(72) + !Control.HasFocus(73) + !Control.HasFocus(74) + !Control.HasFocus(900)</visible>
 					</control>
 					<control type="label" id="75">
@@ -6704,7 +6704,7 @@
 						<texture>game-circle.png</texture>
 						<colordiffuse>FF00FF00</colordiffuse>
 						<animation effect="fade" start="0" end="100" time="500">Visible</animation>
-						<animation effect="fade" start="100" end="0" time="500" pulse="true" condition="true">Conditional</animation>
+						<animation effect="fade" start="100" end="0" time="500" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 						<visible>Skin.String(playerturn,2) + ![Control.IsVisible(78) | Control.IsVisible(79) | [[Skin.HasSetting(cross1) | Skin.HasSetting(circle1)] + [Skin.HasSetting(cross2) | Skin.HasSetting(circle2)] + [Skin.HasSetting(cross3) | Skin.HasSetting(circle3)] + [Skin.HasSetting(cross4) | Skin.HasSetting(circle4)] + [Skin.HasSetting(cross5) | Skin.HasSetting(circle5)] + [Skin.HasSetting(cross6) | Skin.HasSetting(circle6)] + [Skin.HasSetting(cross7) | Skin.HasSetting(circle7)] + [Skin.HasSetting(cross8) | Skin.HasSetting(circle8)] + [Skin.HasSetting(cross9) | Skin.HasSetting(circle9)]]] + !Control.HasFocus(71) + !Control.HasFocus(72) + !Control.HasFocus(73) + !Control.HasFocus(74) + !Control.HasFocus(900)</visible>
 					</control>
 					<control type="label">
@@ -7503,7 +7503,7 @@
 						<font>font-80</font>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<animation effect="fade" start="100" end="60" time="400" loop="true" condition="true">Conditional</animation>
+						<animation effect="fade" start="100" end="60" time="400" loop="true" condition="!System.ScreenSaverActive">Conditional</animation>
 						<include>RecentFadeEffect</include>
 						<visible>Control.IsVisible(78) | Control.IsVisible(79)</visible>
 					</control>
@@ -7517,7 +7517,7 @@
 						<font>font-80</font>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<animation effect="fade" start="100" end="60" time="400" loop="true" condition="true">Conditional</animation>
+						<animation effect="fade" start="100" end="60" time="400" loop="true" condition="!System.ScreenSaverActive">Conditional</animation>
 						<visible>Skin.String(player1score,5) | Skin.String(player2score,5)</visible>
 					</control>
 					<control type="label">
@@ -7530,7 +7530,7 @@
 						<font>font-80</font>
 						<textcolor>yellow</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<animation effect="fade" start="100" end="60" time="800" loop="true" condition="true">Conditional</animation>
+						<animation effect="fade" start="100" end="60" time="800" loop="true" condition="!System.ScreenSaverActive">Conditional</animation>
 						<visible>Skin.String(player1score,5) | Skin.String(player2score,5)</visible>
 					</control>
 				</control>
@@ -7548,7 +7548,7 @@
 						<font>font-480</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<animation effect="fade" start="5" end="30" time="2000" pulse="true" condition="true">Conditional</animation>
+						<animation effect="fade" start="5" end="30" time="2000" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 					</control>
 					<control type="scrollbar" id="1001">
 						<posx>950</posx>

@@ -229,7 +229,7 @@
 				<texture>button-focus.png</texture>
 				<animation effect="slide" start="0,0" end="200,0" time="100" condition="Control.HasFocus(14)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="400,0" time="100" condition="Control.HasFocus(15)">Conditional</animation>
-				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 				<visible>!Window.IsVisible(SmartPlaylistRule) + [Control.HasFocus(13) | Control.HasFocus(15) | Control.HasFocus(14)]</visible>
 			</control>
 			<control type="spincontrolex" id="16">
@@ -288,7 +288,7 @@
 				<width>880</width>
 				<height>30</height>
 				<texture border="7">list-focus.png</texture>
-				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="Control.HasFocus(19) | Control.HasFocus(800) | Control.HasFocus(801)">Conditional</animation>
+				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive+Control.HasFocus(19) | Control.HasFocus(800) | Control.HasFocus(801)">Conditional</animation>
 				<visible>Control.HasFocus(19) | Control.HasFocus(800) | Control.HasFocus(801)</visible>
 			</control>
 			<control type="togglebutton" id="19">
@@ -428,7 +428,7 @@
 				<width>200</width>
 				<texture>button-focus.png</texture>
 				<animation effect="slide" start="0,0" end="200,0" time="100" condition="Control.HasFocus(21)">Conditional</animation>
-				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+				<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 				<visible>Control.HasFocus(20) | Control.HasFocus(21)</visible>
 			</control>
 		</control>

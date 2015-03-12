@@ -207,7 +207,7 @@
 			<animation effect="slide" start="0,0" end="120,0" time="0" condition="!VideoPlayer.Content(Episodes)">conditional</animation>
 			<animation effect="slide" start="0,0" end="240,0" time="100" condition="Control.HasFocus(3)">conditional</animation>
 			<animation effect="slide" start="0,0" end="480,0" time="100" condition="Control.HasFocus(4)">conditional</animation>
-			<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="true">Conditional</animation>
+			<animation effect="fade" start="70" end="100" time="750" pulse="true" condition="!System.ScreenSaverActive">Conditional</animation>
 			<visible>Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
 		</control>
 	</controls>

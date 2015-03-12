@@ -240,7 +240,7 @@
 			<posy>0</posy>
 			<height>40</height>
 			<texture border="15">Button_Home_Focus.png</texture>
-			<animation effect="fade" start="100" end="90" time="900" pulse="true" condition="Control.HasFocus(5040)">conditional</animation>
+			<animation effect="fade" start="100" end="90" time="900" pulse="true" condition="!System.ScreenSaverActive+Control.HasFocus(5040)">conditional</animation>
 			<visible>Control.HasFocus(5040)</visible>
 			<include condition="!Skin.HasSetting(WideHomeMenu)">HomeButtonNormal</include>
 			<include condition="Skin.HasSetting(WideHomeMenu)">HomeButtonWide</include>
@@ -275,7 +275,7 @@
 			<width>213</width>
 			<height>40</height>
 			<texture border="15">Button_Home_Focus_Hor.png</texture>
-			<animation effect="fade" start="100" end="90" time="900" pulse="true" condition="Control.HasFocus(5040)">conditional</animation>
+			<animation effect="fade" start="100" end="90" time="900" pulse="true" condition="!System.ScreenSaverActive+Control.HasFocus(5040)">conditional</animation>
 			<visible>Control.HasFocus(5040)</visible>
 			<include>T-Level</include>
 		</control>
@@ -308,7 +308,7 @@
 			<width>237</width>
 			<height>40</height>
 			<texture border="15">Button_Home_Focus_Hor.png</texture>
-			<animation effect="fade" start="100" end="90" time="900" pulse="true" condition="Control.HasFocus(5040)">conditional</animation>
+			<animation effect="fade" start="100" end="90" time="900" pulse="true" condition="!System.ScreenSaverActive+Control.HasFocus(5040)">conditional</animation>
 			<visible>Control.HasFocus(5040)</visible>
 			<include>T-Level</include>
 		</control>
